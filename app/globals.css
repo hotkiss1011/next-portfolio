@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.firefly {
+  animation: float 10s linear infinite;
+  box-shadow: 0 0 10px 5px rgba(255, 223, 0, 0.6);
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  12.5% {
+    transform: translate(25px, -25px);
+  }
+  25% {
+    transform: translate(50px, 0);
+  }
+  37.5% {
+    transform: translate(25px, 25px);
+  }
+  50% {
+    transform: translate(0, 0); /* Middle point */
+  }
+  62.5% {
+    transform: translate(-25px, -25px);
+  }
+  75% {
+    transform: translate(-50px, 0);
+  }
+  87.5% {
+    transform: translate(-25px, 25px);
+  }
+  100% {
+    transform: translate(0, 0); /* End point, same as start */
+  }
+}
